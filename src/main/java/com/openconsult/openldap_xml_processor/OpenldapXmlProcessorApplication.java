@@ -21,6 +21,10 @@ public class OpenldapXmlProcessorApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		ldapOrchestratorService.parseXMLFile("src/main/resources/files/AddGrupo1.xml");
+		ldapOrchestratorService.parseXMLFile("src/main/resources/files/AddGrupo2.xml");
+		ldapOrchestratorService.parseXMLFile("src/main/resources/files/AddGrupo3.xml");
 		ldapOrchestratorService.parseXMLFile("src/main/resources/files/AddUsuario1.xml");
+		ldapOrchestratorService.parseXMLFile("src/main/resources/files/ModifyUsuario.xml");
 	}
 }
